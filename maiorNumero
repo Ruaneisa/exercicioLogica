@@ -1,0 +1,17 @@
+//Execício para encontrar o maior número dentro de uma lista.
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+
+        List<Integer> valor = new ArrayList<>(List.of(10, 2 , 55, 90, 3, 12, 33));
+
+        Collections.sort(valor, Collections.reverseOrder());
+
+        System.out.println(valor.get(0));
+    }
+}
